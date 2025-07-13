@@ -80,4 +80,24 @@ After the data is inserted, various SQL queries can be written to explore and an
 ### Advanced Level
 1. Find the top 3 most-viewed tracks for each artist using window functions.
 2. Write a query to find tracks where the liveness score is above the average.
-3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
+3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.** 
+
+## Key Insights
+### Basic Analysis
+1. Billion-Stream Club: Identified tracks with over 1 billion streams.
+2. Artist Catalog: Listed albums with respective artists and track counts.
+3. Engagement Metrics: Calculated total comments for licensed tracks.
+
+### Intermediate Analysis
+1. Audio Features: Ranked tracks by energy/danceability; compared Spotify vs. YouTube streaming.
+2. Video Performance: Analyzed views/likes for official music videos.
+
+### Advanced Analysis
+1. Artist Spotlight: Used window functions (DENSE_RANK()) to find top 3 tracks per artist by views.
+2. Energy Variance: Calculated energy score gaps within albums using CTEs.
+3. Platform Preference: Highlighted tracks streamed more on Spotify than YouTube.
+
+## Skills & Tools
+1. SQL: Window functions, CTEs, COALESCE, ILIKE.
+2. Data Cleaning: Handled invalid durations (0-minute tracks).
+3. Metrics: Streams, views, likes, audio feature analysis.
